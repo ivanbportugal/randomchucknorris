@@ -5,13 +5,22 @@
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  <h2>Chuck Says...</h2>
+  <img class="chuckIcon" src="{{jokeImgSrc}}" alt="Chuck Norris Icon">
+  <h3>"{{ jokeText }}"</h3>
+  <br>
+  <hr>
+  <br>
+  <h3>Search for Number: {{ selectedNumber }}</h3>
+  <ion-item>
+    <ion-range [(ngModel)]="selectedNumber">
+      <ion-icon range-left name="arrow-back"></ion-icon>
+      <ion-icon range-right name="arrow-forward"></ion-icon>
+    </ion-range>
+  </ion-item>
+  <h3>Interesting... {{ randomFact }}</h3>
+
+  <button ion-button>
+    <ion-icon name="refresh-circle" (click)="refresh()"></ion-icon>
+  </button>
 </ion-content>
