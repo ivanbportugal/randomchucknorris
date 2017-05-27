@@ -20,4 +20,4 @@ $ ionic cordova run ios
 $ ionic cordova platform add android
 $ ionic cordova run android
 ```
-
+![Random Chuck Norris Screenshot](https://raw.githubusercontent.com/ivanbportugal/randomchucknorris/master/ScreenShot.png)
